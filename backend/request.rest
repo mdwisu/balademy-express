@@ -1,0 +1,29 @@
+@site_url = http://localhost:5000
+###
+
+GET {{site_url}}/users
+###
+
+POST {{site_url}}/users
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "id": 2,
+    "name": "dwi",
+    "email": "dwi@gmail.com"
+}
+
+###
+
+put {{site_url}}/users/1
+###
+
+delete {{site_url}}/users/1
+###
+
+POST {{site_url}}/users
+Content-Type: application/x-www-form-urlencoded
+
+&name=foo
+&password=bar
+&indonesia=123
